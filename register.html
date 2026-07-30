@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ClassCompass - Register</title>
+  <link rel="stylesheet" href="resources/css/styles.css" />
+  <script src="resources/js/script.js" defer></script>
+</head>
+<body class="register-page">
+  <header class="main-header">
+    <div class="logo-area">
+      <div class="logo-box"></div>
+      <span class="site-title">ClassCompass</span>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1>Sign Up</h1>
+
+    <form id="register-form">
+      <p id="register-error" style="color: red; font-size: 0.85rem;"></p>
+      <p id="register-success" style="color: green; font-size: 0.85rem;"></p>
+
+      <label>
+        Name<br />
+        <input type="text" id="register-name" required />
+      </label>
+      <br /><br />
+
+      <label>
+        Email<br />
+        <input type="email" id="register-email" required />
+      </label>
+      <br /><br />
+
+      <label>
+        Password<br />
+        <input type="password" id="register-password" required />
+      </label>
+      <br /><br />
+
+      <label>
+        Confirm password<br />
+        <input type="password" id="register-confirm" required />
+      </label>
+      <br /><br />
+
+      <button type="submit">Create Account</button>
+    </form>
+
+    <p style="margin-top: 1rem; font-size: 0.9rem;">
+      Already have an account?
+      <a href="log-in.html">Back to log in</a>
+    </p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ClassCompass - My Profile</title>
+  <link rel="stylesheet" href="../resources/css/styles.css" />
+  <script src="../resources/js/script.js" defer></script>
+</head>
+<body class="my-profile-page">
+  <header class="main-header">
+    <div class="logo-area">
+      <div class="logo-box"></div>
+      <span class="site-title">ClassCompass</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="../index.html">Dashboard</a>
+      <a href="analytics.html">Analytics &amp; Insights</a>
+      <a href="my-profile.html">My Profile</a>
+      <a href="feedback-forum.html">Feedback Forum</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="search" class="search-input" placeholder="search" />
+      <span class="user-email">username@gmail.com</span>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <!-- title and divider -->
+    <h1 class="my-profile-title">My Profile</h1>
+    <hr class="my-profile-divider">
+
+    <!-- profile picture -->
+    <section class="profile-top">
+      <div class="profile-avatar">
+        <span>profile pic of teacher</span>
+      </div>
+    </section>
+
+    <!-- profile details -->
+    <section class="profile-form-section">
+
+      <!-- name -->
+      <div class="profile-row">
+        <div class="profile-label">Name:</div>
+        <div class="profile-field">
+          <input type="text" id="profile-name" value="" disabled />
+        </div>
+        <button type="button" class="edit-btn" aria-label="Edit name">✎</button>
+      </div>
+
+      <!-- email -->
+      <div class="profile-row">
+        <div class="profile-label">Email:</div>
+        <div class="profile-field">
+          <input type="email" id="profile-email" value="" disabled />
+        </div>
+        <button type="button" class="edit-btn" aria-label="Edit email">✎</button>
+      </div>
+
+      <!-- school -->
+      <div class="profile-row">
+        <div class="profile-label">School:</div>
+        <div class="profile-field">
+          <input type="text" value="Rensselaer Polytechnic Institute" disabled />
+        </div>
+        <button type="button" class="edit-btn" aria-label="Edit school">✎</button>
+      </div>
+
+      <!-- RIN -->
+      <div class="profile-row">
+        <div class="profile-label">RIN:</div>
+        <div class="profile-field">
+          <input type="text" value="661234567" disabled />
+        </div>
+        <button type="button" class="edit-btn" aria-label="Edit RIN">✎</button>
+      </div>
+
+      <!-- password -->
+      <div class="profile-row profile-row-wide">
+        <div class="profile-label">Password:</div>
+        <div class="profile-field">
+          <input type="password" id="profile-password" value="" disabled />
+        </div>
+        <button type="button" class="edit-btn" aria-label="Edit password">✎</button>
+      </div>
+
+      <!-- 2-factor auth -->
+      <div class="profile-row profile-row-wide">
+        <div class="profile-label">2-factor auth</div>
+        <div class="profile-field">
+          <input type="text" placeholder="(phone number)">
+        </div>
+        <div class="edit-btn-placeholder"></div>
+      </div>
+
+      <!-- courses -->
+      <div class="profile-row profile-row-wide profile-row-courses">
+        <div class="profile-label">Courses</div>
+        <div class="profile-field">
+          <div id="profile-course-list" class="course-list">
+          </div>
+        </div>
+        <div class="edit-btn-placeholder"></div>
+      </div>
+
+      <!-- add course -->
+      <div class="profile-row profile-row-wide">
+        <div class="profile-label">Add Course</div>
+        <div class="profile-field">
+          <input type="text" id="new-course-input" placeholder="Course name" />
+          <button type="button" class="profile-add-course-btn" id="add-course-btn">
+            Add
+          </button>
+        </div>
+        <div class="edit-btn-placeholder"></div>
+      </div>
+
+      <!-- save button and message -->
+      <div class="profile-row profile-row-wide profile-save-row">
+        <div class="profile-label"></div>
+        <div class="profile-field">
+          <button type="button" class="profile-save-btn" id="profile-save-btn">
+            Save Changes
+          </button>
+          <span class="profile-save-message" id="profile-save-message"></span>
+        </div>
+        <div class="edit-btn-placeholder"></div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>ClassCompass
+    <span>&ensp;•&ensp;</span>
+    The Navigators</p>
+  </footer>
+</body>
+</html>

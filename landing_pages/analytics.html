@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ClassCompass - Class Overview</title>
+  <link rel="stylesheet" href="../resources/css/styles.css" />
+  <script src="../resources/js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+        .chart-row {
+            display: flex;
+            gap: 30px;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+
+        .chart-box {
+            width: 600px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body class="class-overview-page">
+  <header class="main-header">
+    <div class="logo-area">
+      <div class="logo-box"></div>
+      <span class="site-title">ClassCompass</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="../index.html">Dashboard</a>
+      <a href="analytics.html">Analytics &amp; Insights</a>
+      <a href="my-profile.html">My Profile</a>
+      <a href="feedback-forum.html">Feedback Forum</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="search" class="search-input" placeholder="search" />
+      <span class="user-email">username@gmail.com</span>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1 class="section-title">Current Classes Analytics</h1>
+
+    <!-- Class 1 -->
+    <section class="class-row">
+      <div class="class-info">
+        <a href="class-overview.html?class=class1" class="class-title">
+          Intro to ITWS
+        </a>
+        <div class="chart-row">
+            <div class="chart-box">
+                <canvas id="chart1"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <canvas id="chart2"></canvas>
+            </div>
+        </div>
+
+        <script>
+        // Chart 1 sample data
+        const labels1 = ["below 70%", "70-79%", "80-89%", "90-100%"];
+        const values1 = [20, 10, 3, 4];
+
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: labels1,
+                datasets: [{
+                    label: 'Grade Distribution',
+                    data: values1,
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        // Chart 2 sample data
+        const labels2 = ["needs attention", "struggling", "good standing"];
+        const values2 = [70, 16, 50];
+
+        const ctx2 = document.getElementById('chart2').getContext('2d');
+        new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: labels2,
+                datasets: [{
+                    label: 'Student Performances',
+                    data: values2,
+                    borderWidth: 2
+                }]
+            }
+        });
+        </script>
+      </div>
+    </section>
+
+    <!-- Class 2 -->
+    <section class="class-row">
+    <div class="class-info">
+        <a href="class-overview.html?class=class2" class="class-title">
+        The Sociology of Zombies
+        </a>
+
+        <div class="chart-row">
+            <div class="chart-box">
+                <canvas id="chart3"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <canvas id="chart4"></canvas>
+            </div>
+        </div>
+
+        <script>
+        // Chart 1 sample data
+        const labels3 = ["below 70%", "70-79%", "80-89%", "90-100%"];
+        const values3 = [12, 18, 7, 4];
+
+        const ctx3 = document.getElementById('chart3').getContext('2d');
+        new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: labels3,
+                datasets: [{
+                    label: 'Grade Distribution',
+                    data: values3,
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        // Chart 2 sample data
+        const labels4 = ["needs attention", "struggling", "good standing"];
+        const values4 = [70, 75, 78];
+
+        const ctx4 = document.getElementById('chart4').getContext('2d');
+        new Chart(ctx4, {
+            type: 'pie',
+            data: {
+                labels: labels4,
+                datasets: [{
+                    label: 'Student Performances',
+                    data: values4,
+                    borderWidth: 2
+                }]
+            }
+        });
+        </script>
+
+    </div>
+    </section>
+
+    <!-- Class 3 -->
+    <section class="class-row">
+      <div class="class-info">
+        <a href="class-overview.html?class=class3" class="class-title">
+          Clown Theory
+        </a>
+        <div class="chart-row">
+            <div class="chart-box">
+                <canvas id="chart5"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <canvas id="chart6"></canvas>
+            </div>
+        </div>
+
+        <script>
+        // Chart 1 sample data
+        const labels5 = ["below 70%", "70-79%", "80-89%", "90-100%"];
+        const values5 = [5, 18, 13, 20];
+
+        const ctx5 = document.getElementById('chart5').getContext('2d');
+        new Chart(ctx5, {
+            type: 'bar',
+            data: {
+                labels: labels5,
+                datasets: [{
+                    label: 'Grade Distribution',
+                    data: values5,
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        // Chart 2 sample data
+        const labels6 = ["needs attention", "struggling", "good standing"];
+        const values6 = [15, 60, 50];
+
+        const ctx6 = document.getElementById('chart6').getContext('2d');
+        new Chart(ctx6, {
+            type: 'pie',
+            data: {
+                labels: labels6,
+                datasets: [{
+                    label: 'Student Performances',
+                    data: values6,
+                    borderWidth: 2
+                }]
+            }
+        });
+        </script>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>ClassCompass
+    <span>&ensp;•&ensp;</span>
+    The Navigators</p>
+  </footer>
+</body>
+</html>

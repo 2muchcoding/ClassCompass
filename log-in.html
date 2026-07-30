@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ClassCompass - Log In</title>
+  <link rel="stylesheet" href="resources/css/styles.css" />
+  <script src="resources/js/script.js" defer></script>
+</head>
+<body class="login-page">
+  <header class="main-header">
+    <div class="logo-area">
+      <div class="logo-box"></div>
+      <span class="site-title">ClassCompass</span>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1>Log In</h1>
+
+    <form id="login-form">
+      <p id="login-error" style="color: red; font-size: 0.85rem;"></p>
+
+      <label>
+        Email<br />
+        <input type="email" id="login-email" required />
+      </label>
+      <br /><br />
+      <label>
+        Password<br />
+        <input type="password" id="login-password" required />
+      </label>
+      <br /><br />
+      <button type="submit">Log In</button>
+    </form>
+
+    <p style="margin-top: 1rem; font-size: 0.9rem;">
+      Don't have an account?
+      <a href="register.html">Sign up</a>
+    </p>
+  </main>
+</body>
+</html>

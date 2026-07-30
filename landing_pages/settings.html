@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ClassCompass - Settings</title>
+  <link rel="stylesheet" href="../resources/css/styles.css" />
+  <script src="../resources/js/script.js" defer></script>
+</head>
+<body class="settings-page">
+  <header class="main-header">
+    <div class="logo-area">
+      <div class="logo-box"></div>
+      <span class="site-title">ClassCompass</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="../index.html">Dashboard</a>
+      <a href="analytics.html">Analytics &amp; Insights</a>
+      <a href="my-profile.html">My Profile</a>
+      <a href="feedback-forum.html">Feedback Forum</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="search" class="search-input" placeholder="search" />
+      <span class="user-email">username@gmail.com</span>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="page-content settings-page">
+    <h1 class="settings-title">Settings</h1>
+    <hr class="settings-divider">
+
+    <!-- Appearance -->
+    <section class="settings-section">
+      <div class="settings-section-header">
+        <h2>Appearance</h2>
+      </div>
+
+      <div class="settings-row">
+        <div class="settings-label-group">
+          <div class="settings-label-main">Dark mode</div>
+        </div>
+        <div class="settings-control">
+          <button type="button" class="settings-pill-btn" id="settings-dark-mode-toggle">
+            off
+          </button>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <div class="settings-label-group">
+          <div class="settings-label-main">Background</div>
+        </div>
+        <div class="settings-control">
+          <input type="file" id="settings-bg-upload" accept="image/*" />
+          <button type="button" class="settings-pill-btn" id="settings-bg-clear">
+            Remove background
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Language -->
+    <section class="settings-section">
+      <div class="settings-section-header">
+        <h2>Language</h2>
+      </div>
+
+      <div class="settings-row">
+        <div class="settings-label-group">
+          <div class="settings-label-main">Select language (dropdown)</div>
+        </div>
+        <div class="settings-control">
+          <select class="settings-select" id="settings-language">
+            <option>English</option>
+            <option>Spanish</option>
+            <option>French</option>
+            <option>Chinese</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Preferences -->
+    <section class="settings-section">
+      <div class="settings-section-header">
+        <h2>Academic Preferences</h2>
+      </div>
+
+      <div class="settings-options-grid">
+        <div class="settings-options-column">
+          <label class="settings-checkbox">
+            <input type="checkbox" id="settings-pref-letter"> Letter Grade
+          </label>
+          <label class="settings-checkbox">
+            <input type="checkbox" id="settings-pref-percent"> Percentage Grade
+          </label>
+          <label class="settings-checkbox">
+            <input type="checkbox" id="settings-pref-gpa"> G.P.A (4.0/5.0, custom)
+          </label>
+          <label class="settings-checkbox">
+            <input type="checkbox" id="settings-pref-score"> Score (A = 93, A- = 90, etc.)
+          </label>
+          <div class="settings-score-scale" id="settings-score-scale" style="margin-top:0.5rem; display:none;">
+  <table class="settings-score-table">
+    <thead>
+      <tr>
+        <th>Letter</th>
+        <th>Minimum Score (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A</td>
+        <td><input type="number" id="settings-score-A" min="0" max="100"></td>
+      </tr>
+      <tr>
+        <td>A-</td>
+        <td><input type="number" id="settings-score-Aminus" min="0" max="100"></td>
+      </tr>
+      <tr>
+        <td>B+</td>
+        <td><input type="number" id="settings-score-Bplus" min="0" max="100"></td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td><input type="number" id="settings-score-B" min="0" max="100"></td>
+      </tr>
+      <tr>
+        <td>B-</td>
+        <td><input type="number" id="settings-score-Bminus" min="0" max="100"></td>
+      </tr>
+      <tr>
+        <td>C+</td>
+        <td><input type="number" id="settings-score-Cplus" min="0" max="100"></td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td><input type="number" id="settings-score-C" min="0" max="100"></td>
+      </tr>
+      <tr>
+        <td>C-</td>
+        <td><input type="number" id="settings-score-Cminus" min="0" max="100"></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:0.8rem; margin-top:0.4rem;">
+    These values represent the minimum percentage needed for each letter grade.
+  </p>
+</div>
+
+        </div>
+
+        <div class="settings-options-column">
+          <label class="settings-checkbox">
+            <input type="checkbox" id="settings-pref-drop-lowest"> Drop lowest grade (hw, test, lab, etc.)
+          </label>
+          <label class="settings-checkbox">
+            <input type="checkbox" id="settings-pref-category-weights">
+            Category weights (exams = 50%, hw = 25%, etc.)
+          </label>
+          <label class="settings-checkbox">
+            <input type="checkbox" id="settings-pref-feedback-forum"> Feedback forum
+          </label>
+          <label class="settings-checkbox">
+            <input type="checkbox" id="settings-pref-grade-calculator"> Grade/GPA Calculator
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notifications & Alerts -->
+    <section class="settings-section">
+      <div class="settings-section-header">
+        <h2>Notifications &amp; Alerts</h2>
+      </div>
+
+      <div class="settings-subheading">Emails</div>
+
+      <div class="settings-options-column">
+        <label class="settings-checkbox">
+          <input type="checkbox" id="settings-notif-summary"> Weekly/Monthly summary reports
+        </label>
+        <label class="settings-checkbox">
+          <input type="checkbox" id="settings-notif-grades"> Grade/GPA updates
+        </label>
+        <label class="settings-checkbox">
+          <input type="checkbox" id="settings-notif-deadlines"> Deadlines
+        </label>
+      </div>
+    </section>
+
+    <!-- Privacy & Security -->
+    <section class="settings-section">
+      <div class="settings-section-header">
+        <h2>Privacy &amp; Security</h2>
+      </div>
+
+      <div class="settings-options-column">
+        <label class="settings-checkbox">
+          <input type="checkbox" id="settings-privacy-export"> Download/export data
+        </label>
+        <div class="settings-label-main">
+          Consent &amp; Data Policy (terms and agreement)
+        </div>
+      </div>
+    </section>
+
+    <!-- Save button -->
+    <section class="settings-section">
+      <button type="button" class="profile-save-btn" id="settings-save-btn">
+        Save Changes
+      </button>
+      <span id="settings-save-message" style="margin-left:0.75rem; font-size:0.9rem;"></span>
+    </section>
+
+    <!-- Delete account -->
+    <section class="settings-delete">
+      <button type="button" class="settings-delete-btn" id="settings-delete-btn">
+        Delete account
+      </button>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>ClassCompass
+    <span>&ensp;•&ensp;</span>
+    The Navigators</p>
+  </footer>
+</body>
+</html>

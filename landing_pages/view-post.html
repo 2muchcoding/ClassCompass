@@ -1,0 +1,94 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ClassCompass - View Feedback</title>
+  <link rel="stylesheet" href="../resources/css/styles.css" />
+  <script src="../resources/js/script.js" defer></script>
+</head>
+<body class="view-post-page">
+  <header class="main-header">
+    <div class="logo-area">
+      <div class="logo-box"></div>
+      <span class="site-title">ClassCompass</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="../index.html">Dashboard</a>
+      <a href="analytics.html">Analytics &amp; Insights</a>
+      <a href="my-profile.html">My Profile</a>
+      <a href="feedback-forum.html">Feedback Forum</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="search" class="search-input" placeholder="search" />
+      <span class="user-email"></span>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1 class="forum-title" id="post-title">Forum Title</h1>
+
+    <!-- post meta -->
+    <section class="settings-section">
+      <div class="settings-row">
+        <div class="settings-label-group">
+          <div class="settings-label-main">Course Name</div>
+        </div>
+        <div id="post-course"></div>
+      </div>
+
+      <div class="settings-row">
+        <div class="settings-label-group">
+          <div class="settings-label-main">Submitted By</div>
+        </div>
+        <div id="post-author"></div>
+      </div>
+
+      <div class="settings-row">
+        <div class="settings-label-group">
+          <div class="settings-label-main">Date Submitted</div>
+        </div>
+        <div id="post-date"></div>
+      </div>
+    </section>
+
+    <!-- post body -->
+    <section class="settings-section">
+      <h2 class="settings-title" style="font-size:1.1rem; margin-bottom:0.5rem;">Feedback</h2>
+      <p id="post-body" style="margin-top:0.25rem;">
+        Post content goes here.
+      </p>
+    </section>
+
+    <!-- likea + comments -->
+    <section class="settings-section">
+      <!-- likes -->
+      <div class="settings-row">
+        <div class="settings-label-group">
+          <div class="settings-label-main">
+            Likes: <span id="like-count">0</span>
+          </div>
+        </div>
+        <div>
+          <button type="button" class="settings-pill-btn" id="like-button">
+            Like
+          </button>
+        </div>
+      </div>
+
+      <!-- comments list -->
+      <h2 class="settings-subheading" style="margin-top:1.2rem;">Comments</h2>
+      <div id="comments-list" style="margin-bottom:1rem; font-size:0.9rem;">
+        <!-- JS will render comments here -->
+      </div>
+
+  <footer class="page-footer">
+    <p>ClassCompass
+    <span>&ensp;•&ensp;</span>
+    The Navigators</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ClassCompass - Class Overview</title>
+  <link rel="stylesheet" href="../resources/css/styles.css" />
+  <script src="../resources/js/script.js" defer></script>
+</head>
+<body class="class-overview-page">
+  <header class="main-header">
+    <div class="logo-area">
+      <div class="logo-box"></div>
+      <span class="site-title">ClassCompass</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="../index.html">Dashboard</a>
+      <a href="analytics.html">Analytics &amp; Insights</a>
+      <a href="my-profile.html">My Profile</a>
+      <a href="feedback-forum.html">Feedback Forum</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <div class="header-right">
+      <input type="search" class="search-input" placeholder="search" />
+      <span class="user-email">username@gmail.com</span>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1 class="course-name" id="course-name">Class Overview</h1>
+
+    <!-- Stats Cards -->
+    <div class="stats-grid">
+      <div class="stats-card">
+        <h3>Class Average</h3>
+        <h1>81%</h1>
+      </div>
+      <div class="stats-card">
+        <h3>Total Students</h3>
+        <h1>12</h1>
+      </div>
+      <div class="stats-card">
+        <h3>Struggling Students</h3>
+        <h1>2</h1>
+      </div>
+      <div class="stats-card">
+        <h3>Upcoming Tasks</h3>
+        <h1>3</h1>
+      </div>
+    </div>
+
+    <!-- Students Table -->
+    <h3>Students</h3>
+    <iframe src="../students.php"
+      width="100%" 
+      height="800px" 
+      style="border: 1px solid #ddd; border-radius: 4px;">
+    </iframe>
+
+    <!-- Upcoming Assignments -->
+    <div class="calendar-section">
+      <h2 class="section-title">Upcoming Assignments/Exams</h2>
+      <div class="assignment-item">
+        <span>Term Project Presentation</span>
+        <span class="date">Dec 8, 2025</span>
+      </div>
+      <div class="assignment-item">
+        <span>Quiz 3</span>
+        <span class="date">Dec 9, 2025</span>
+      </div>
+      <div class="assignment-item">
+        <span>Term Project</span>
+        <span class="date">Dec 11, 2025</span>
+      </div>
+    </div>    
+  </main>
+
+  <footer class="page-footer">
+    <p>ClassCompass
+    <span>&ensp;•&ensp;</span>
+    The Navigators</p>
+  </footer>
+</body>
+</html>
