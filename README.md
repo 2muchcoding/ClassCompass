@@ -37,3 +37,9 @@ Start using ClassCompass today and discover a smarter, more connected way to tea
 1. All queries used to make the table are in resources/sql/students.sql
 2. You can add new students either using the queries or by adding them trough the table on the class overview page
 3. All includes used for the PHP (config.inc.php, foot.inc.php, head.inc.php, and init.inc.php) are in the includes/ folder
+
+## Deployment Note
+This project was originally developed with PHP backend functionality.
+GitHub Pages only supports static content, so PHP-based features are not available in the live demo.
+
+The frontend, design, navigation, and core user experience can be viewed in the deployed site.
